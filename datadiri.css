@@ -1,0 +1,133 @@
+/* Reset dan Base Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, white 0%, #4C225D 100%);
+    color: #493349;
+    line-height: 1.6;
+    padding: 20px;
+    min-height: 100vh;
+}
+/* Background warna kotak tampilan */
+form {
+    max-width: 500px;
+    margin: 50px auto;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+/* Label dan Input Umum */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #purple;
+    box-shadow: 0 0 15px rgba(89, 15, 80, 0.3);
+}
+
+/* Radio Buttons dan Checkboxes */
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 8px;
+    margin-bottom: 10px;
+}
+
+input[type="radio"] + label,
+input[type="checkbox"] + label {
+    display: inline;
+    font-weight: normal;
+    margin-right: 20px;
+}
+
+/* Grup Jenis Kelamin dan Hobi */
+.jenis-kelamin,
+.hobi {
+    margin-bottom: 20px;
+}
+
+.jenis-kelamin label,
+.hobi label {
+    display: inline;
+}
+
+/* Select Dropdown */
+select {
+    background-color: white;
+    cursor: pointer;
+}
+
+/* Textarea */
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+
+input[type="submit"]:hover {
+    background-color: blue;
+}
+
+/* Responsif untuk Mobile */
+@media (max-width: 600px) {
+    form {
+        margin: 20px;
+        padding: 20px;
+    }
+    
+    input[type="radio"] + label,
+    input[type="checkbox"] + label {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+    /* Styling untuk Button WhatsApp */
+button[type="button"] {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+button[type="button"]:hover {
+    background-color: #333;
+}
+
+button[type="button"]:active {
+    background-color: #3d8b40;
+}
+}

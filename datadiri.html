@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Biodata Anda</title>
+    <link rel="stylesheet" href="datadiri.css">
+</head>
+<body>
+
+    <form id="myForm">
+        <label for="nama">Nama: </label>
+        <input type="text" id="nama" name="nama" value="" /><br />
+        
+        <label for="password">Password: </label>
+        <input type="password" id="password" name="password" /><br />
+        
+        <label>Jenis Kelamin:</label>
+        <input type="radio" id="laki" name="jenis_kelamin" value="Laki-laki" checked />
+        <label for="laki">Laki-laki</label>
+        <input type="radio" id="perempuan" name="jenis_kelamin" value="Perempuan" />
+        <label for="perempuan">Perempuan</label>
+        
+        <label>Hobi:</label>
+        <input type="checkbox" id="hobi1" name="hobi[]" value="Bermain Game" />
+        <label for="hobi1">Bermain Game</label>
+        <input type="checkbox" id="hobi2" name="hobi[]" value="Jalan-Jalan" checked />
+        <label for="hobi2">Jalan-Jalan</label>
+        <input type="checkbox" id="hobi3" name="hobi[]" value="Tidur" />
+        <label for="hobi3">Tidur</label>
+        <br/>
+        
+        <label for="asal_kota">Asal Kota:</label>
+        <select id="asal_kota" name="asal_kota">
+            <option value="Ambon">Ambon</option>
+            <option value="Balikpapan">Balikpapan</option>
+            <option value="Banda Aceh">Banda Aceh</option>
+            <option value="Bandar Lampung">Bandar Lampung</option>
+            <option value="Bandung">Bandung</option>
+            <option value="Banjar">Banjar</option>
+            <option value="Banjarbaru">Banjarbaru</option>
+            <option value="Banjarmasin">Banjarmasin</option>
+            <option value="Batam">Batam</option>
+            <option value="Batu">Batu</option>
+            <option value="Baubau">Baubau</option>
+            <option value="Bekasi">Bekasi</option>
+            <option value="Bengkulu">Bengkulu</option>
+            <option value="Bima">Bima</option>
+            <option value="Binjai">Binjai</option>
+            <option value="Bitung">Bitung</option>
+            <option value="Blitar">Blitar</option>
+            <option value="Bogor">Bogor</option>
+            <option value="Bontang">Bontang</option>
+            <option value="Bukittinggi">Bukittinggi</option>
+            <option value="Cilegon">Cilegon</option>
+            <option value="Cimahi">Cimahi</option>
+            <option value="Cirebon">Cirebon</option>
+            <option value="Denpasar">Denpasar</option>
+            <option value="Depok">Depok</option>
+            <option value="Dumai">Dumai</option>
+            <option value="Gorontalo">Gorontalo</option>
+            <option value="Gunungsitoli">Gunungsitoli</option>
+            <option value="Jakarta">Jakarta</option>
+            <option value="Jambi">Jambi</option>
+            <option value="Jayapura">Jayapura</option>
+            <option value="Kediri">Kediri</option>
+            <option value="Kendari">Kendari</option>
+            <option value="Kotamobagu">Kotamobagu</option>
+            <option value="Kupang">Kupang</option>
+            <option value="Langsa">Langsa</option>
+            <option value="Lhokseumawe">Lhokseumawe</option>
+            <option value="Lubuklinggau">Lubuklinggau</option>
+            <option value="Madiun">Madiun</option>
+            <option value="Magelang">Magelang</option>
+            <option value="Makassar">Makassar</option>
+            <option value="Malang">Malang</option>
+            <option value="Manado">Manado</option>
+            <option value="Mataram">Mataram</option>
+            <option value="Medan">Medan</option>
+            <option value="Metro">Metro</option>
+            <option value="Mojokerto">Mojokerto</option>
+            <option value="Padang">Padang</option>
+            <option value="Padangpanjang">Padangpanjang</option>
+            <option value="Padangsidempuan">Padangsidempuan</option>
+            <option value="Pagar Alam">Pagar Alam</option>
+            <option value="Palangka Raya">Palangka Raya</option>
+            <option value="Palembang">Palembang</option>
+            <option value="Palopo">Palopo</option>
+            <option value="Palu">Palu</option>
+            <option value="Pangkalpinang">Pangkalpinang</option>
+            <option value="Parepare">Parepare</option>
+            <option value="Pariaman">Pariaman</option>
+            <option value="Pasuruan">Pasuruan</option>
+            <option value="Payakumbuh">Payakumbuh</option>
+            <option value="Pekalongan">Pekalongan</option>
+            <option value="Pekanbaru">Pekanbaru</option>
+            <option value="Pematangsiantar">Pematangsiantar</option>
+            <option value="Pontianak">Pontianak</option>
+            <option value="Prabumulih">Prabumulih</option>
+            <option value="Probolinggo">Probolinggo</option>
+            <option value="Sabang">Sabang</option>
+            <option value="Salatiga">Salatiga</option>
+            <option value="Samarinda">Samarinda</option>
+            <option value="Sawahlunto">Sawahlunto</option>
+            <option value="Semarang" selected>Semarang</option>
+            <option value="Serang">Serang</option>
+            <option value="Sibolga">Sibolga</option>
+            <option value="Singkawang">Singkawang</option>
+            <option value="Solok">Solok</option>
+            <option value="Sorong">Sorong</option>
+            <option value="Subulussalam">Subulussalam</option>
+            <option value="Sukabumi">Sukabumi</option>
+            <option value="Sungai Penuh">Sungai Penuh</option>
+            <option value="Surabaya">Surabaya</option>
+            <option value="Surakarta">Surakarta</option>
+            <option value="Tangerang">Tangerang</option>
+            <option value="Tangerang Selatan">Tangerang Selatan</option>
+            <option value="Tanjungbalai">Tanjungbalai</option>
+            <option value="Tanjungpinang">Tanjungpinang</option>
+            <option value="Tarakan">Tarakan</option>
+            <option value="Tasikmalaya">Tasikmalaya</option>
+            <option value="Tebing Tinggi">Tebing Tinggi</option>
+            <option value="Tegal">Tegal</option>
+            <option value="Ternate">Ternate</option>
+            <option value="Tidore Kepulauan">Tidore Kepulauan</option>
+            <option value="Tomohon">Tomohon</option>
+            <option value="Tual">Tual</option>
+            <option value="Yogyakarta">Yogyakarta</option>
+        </select><br />
+        
+        <label for="komentar">Komentar Anda:</label><br />
+        <textarea id="komentar" name="komentar" rows="5" cols="20" placeholder="Masukkan Komentar Anda Di Sini..."></textarea><br />
+        
+        <button type="button" onclick="kirimKeWhatsApp()">Kirim Data Diri Anda</button>
+    </form>
+
+    <script>
+        function kirimKeWhatsApp() {
+            const form = document.getElementById('myForm');
+            const nama = form.nama.value.trim() || 'Tidak diisi';
+            const password = form.password.value; // Tidak disertakan untuk keamanan
+            const jenisKelamin = form.querySelector('input[name="jenis_kelamin"]:checked')?.value || 'Tidak dipilih';
+            const hobiChecked = form.querySelectorAll('input[name="hobi[]"]:checked');
+            const hobi = Array.from(hobiChecked).map(cb => cb.value);
+            const asalKota = form.querySelector('select[name="asal_kota"]').value || 'Tidak dipilih';
+            const komentar = form.komentar.value.trim() || 'Tidak ada komentar';
+
+            // Validasi sederhana: Jika nama kosong, beri peringatan
+            if (!nama || nama === 'Tidak diisi') {
+                alert('Mohon isi nama Anda terlebih dahulu!');
+                return;
+            }
+
+            const pesan = `Halo! Ini data form saya:\n\n` +
+                          `- Nama: ${nama}\n` +
+                          `- Jenis Kelamin: ${jenisKelamin}\n` +
+                          `- Hobi: ${hobi.join(', ') || 'Tidak ada'}\n` +
+                          `- Asal Kota: ${asalKota}\n` +
+                          `- Komentar: ${komentar}`;
+
+            const nomorWA = '+79911453407'; // Ganti dengan nomor WhatsApp tujuan (format +62xxxxxxxxxx)
+            const encodedPesan = encodeURIComponent(pesan);
+            const urlWA = `https://wa.me/${nomorWA.replace('+', '')}?text=${encodedPesan}`;
+
+            window.open(urlWA, '_blank'); // Buka di tab baru
+        }
+    </script>
+</body>
+</html>
