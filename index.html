@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kharisma TKJ 3</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Font Awesome untuk icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <!-- Background animasi
+      <video autoplay muted loop playsinline id="bg-video">
+    <source src="bg.mp4" type="video/mp4">
+    Browser Anda tidak mendukung video.
+       </video>
+       <div class="overlay"></div> -->
+
+  <!-- Konten utama -->
+  <div class="container crt">
+    <div class="avatar animate-fade-up">
+      <img src="icon.png" alt="Avatar" />
+    </div>
+    <h1 class="animate-fade-up" style="animation-delay: 0.2s">@Ryntlll</h1>
+    <p class="animate-fade-up" style="animation-delay: 0.4s">🎮 Gamer | 💻 Dev | Pixel</p>
+    
+    <div class="links">
+      <a id="music-toggle" class="animate-fade-up" style="animation-delay: 1.7s; cursor: pointer;">
+      <i class="fas fa-music"></i> 夏目レイコ
+      </a>
+    
+      </a>
+      <a href="https://github.com/Kharismariski" class="animate-fade-up" style="animation-delay: 1s">
+        <i class="fab fa-github"></i> GitHub
+      </a>
+      <a href="https://www.instagram.com/rynntlll?igsh=MTMxMnAyb3Zsc2EzdA==" class="animate-fade-up" style="animation-delay: 1.2s">
+        <i class="fab fa-instagram"></i> Instagram
+      </a>
+      <a href="https://www.tiktok.com/@ryum1n3_?_t=ZS-90DT91mumtU&_r=1" class="animate-fade-up" style="animation-delay: 1.6s">
+        <i class="fab fa-tiktok"></i> TikTok
+      </a>
+
+      <a href="Cs.html" class="animate-fade-up" style="animation-delay: 1.2s">
+        <i class="fas fa-phone"></i> CS
+      </a>
+      <a href="code.html" class="animate-fade-up" style="animation-delay: 2s">
+<i class="fa-solid fa-folder-open"></i> Tugas-Tugas Digital
+      </a>
+    </div>
+
+    <footer class="animate-flicker">Kharisma Riski Yani
+    </br>
+    XI TKJ 3
+    </footer>
+  </div>
+
+  <audio id="click-sound" src="klik.ogg" preload="auto"></audio>
+  <!-- Musik autoplay -->    
+  <audio id="bg-music" src="musik.mp3" preload="auto" loop></audio>
+<script>
+  const bgMusic = document.getElementById("bg-music");
+  const musicToggle = document.getElementById("music-toggle");
+
+  // Event untuk toggle musik
+  musicToggle.addEventListener("click", () => {
+    if (bgMusic.paused) {
+      bgMusic.play().then(() => {
+        musicToggle.innerHTML = '<i class="fas fa-music"></i> Music (Pause)';
+      }).catch(err => {
+        console.warn("Gagal memutar musik:", err);
+      });
+    } else {
+      bgMusic.pause();
+      musicToggle.innerHTML = '<i class="fas fa-music"></i> Music (Play)';
+    }
+  });
+</script>
+  <script src="script.js"></script>
+</body>
+</html>
