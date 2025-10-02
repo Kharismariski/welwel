@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kharisma TKJ 3</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Font Awesome untuk icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <!-- Konten utama -->
+  <div class="container crt">
+    <h1 class="animate-fade-up" style="animation-delay: 0.2s">link is broken⚠️</h1>
+    <p class="animate-fade-up" style="animation-delay: 0.4s">Sorry, this link still doesn't work😅</p>
+    <audio id="bg-music" src="musik.mp3" preload="auto" loop></audio>
+
+<script>
+  const bgMusic = document.getElementById("bg-music");
+
+  const tryPlay = () => {
+    bgMusic.play().catch(err => {
+      console.warn("Gagal autoplay:", err);
+    });
+    // Hapus listener setelah musik diputar
+    document.removeEventListener("click", tryPlay);
+    document.removeEventListener("touchstart", tryPlay);
+  };
+
+  // Coba langsung saat load (jika browser mengizinkan)
+  window.addEventListener("load", () => {
+    bgMusic.play().catch(() => {
+      // Kalau autoplay gagal, tunggu klik/sentuh
+      document.addEventListener("click", tryPlay);
+      document.addEventListener("touchstart", tryPlay);
+    });
+  });
+</script>
+</body>
+</html>
